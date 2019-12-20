@@ -1,10 +1,29 @@
-## Object Calisthenics
-1. Only One Level Of Indentation Per Method
-2. Don’t Use The ELSE Keyword
-3. Wrap All Primitives And Strings
-4. First Class Collections
-5. One Dot Per Line
-6. Don’t Abbreviate
-7. Keep All Entities Small
-8. No Classes With More Than Two Instance Variables
-9. No Getters/Setters/Properties
+## Docplanner Bank
+
+#### Cel zadania
+1. Zaimplementuj bank, który udostępnia interfejs `Bank\BankService`.
+2. Przykładowy scenariusz testowy:
+```gherkin
+Gdy klient wpłacił depozyt 500 w dniu 02-02-2015
+i wpłacił również 1000 w dniu 15-02-2015
+i wypłacił 200 w dniu 17-02-2015
+kiedy wyświetlił listę transakcji
+zobaczył poniższą listę:
+
+Data       || Kwota  || Saldo
+17/02/2015 || -200   || 1300
+15/02/2015 || 1000   || 1500
+02/02/2015 || 500    || 500
+```
+
+#### Założenia
+1. Nie możesz zmienić wystawionego interfejsu banku.
+2. Do skalarnego przedstawienia kwot używaj typu `integer` zamiast `float`.
+3. Do wyświetlania danych możesz użyć nawet prostej instrukcji `echo` do konsoli.
+4. Pokryj implementację testami tam gdzie uważasz, że będą przydatne.
+
+#### Porady
+1. W projekcie zainstalowany jest PHPStan do analizy statycznej i PHPCSFixer do poprawiania CodeStyle-u. Możesz je uruchomić za pomocą komendy `make phpstan` oraz `make php-cs-fixer`. Więcej informacji znajdziesz w pliku `Makefile`.
+2. Możesz uruchomić PHPUnit za pomocą `make phpunit`. 
+3. Nie zwracaj uwagi na liczbę spacji w wyświetlanej tabelce. Nie musi być idealna. :)
+4. Gdy istnieje taka możliwość staraj się pracować na obiektach zamiast typach prostych.

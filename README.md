@@ -4,11 +4,11 @@
 1. Zaimplementuj bank, który udostępnia interfejs `Bank\BankService`.
 2. Przykładowy scenariusz testowy:
 ```gherkin
-Gdy klient wpłacił depozyt 500 w dniu 02-02-2015
-i wpłacił również 1000 w dniu 15-02-2015
-i wypłacił 200 w dniu 17-02-2015
-kiedy wyświetlił listę transakcji
-zobaczył poniższą listę:
+(Given) Klient wpłacił depozyt 500 w dniu 02-02-2015
+(And) wpłacił 1000 w dniu 15-02-2015
+(And) wypłacił 200 w dniu 17-02-2015
+(When) wyświetlił listę transakcji,
+(Then) zobaczył:
 
 Data       || Kwota  || Saldo
 17/02/2015 || -200   || 1300

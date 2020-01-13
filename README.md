@@ -27,3 +27,10 @@ Data       || Kwota  || Saldo
 2. Możesz uruchomić PHPUnit za pomocą `make phpunit`. 
 3. Nie zwracaj uwagi na liczbę spacji w wyświetlanej tabelce. Nie musi być idealna. :)
 4. Gdy istnieje taka możliwość staraj się pracować na obiektach zamiast typach prostych.
+
+#### Feedback
+Miałem spory problem z napisaniem „mechaniki” banku bo chciałem odruchowo implementować to tak jak to jest naprawdę a tego się nie da zrobić na szybko. Popłynąłem lekko w transakcjach ale zostawiłem komentarz.
+
+Patrząc na scenariusz testowy prosi się o zainstalowanie Behata ale sobie to odpuściłem bo nie wiem czy chcieliście i trochę mało to korespondowałoby z phpunitem.
+
+Phpstan jest strasznie nadgorliwy...
